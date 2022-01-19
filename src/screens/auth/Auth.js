@@ -31,7 +31,9 @@ const Auth = ({navigation}) => {
       />
       <Text style={styles.forgotPassword}>Forgot password?</Text>
       {/* <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}> */}
-      <TouchableOpacity style={styles.signInButton}>
+      <TouchableOpacity
+        style={styles.signInButton}
+        onPress={() => navigation.navigate('Selector')}>
         <Text style={styles.signInText}>Sing In</Text>
       </TouchableOpacity>
       {/* </View> */}
